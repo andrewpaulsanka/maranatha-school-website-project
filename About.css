@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+.header
+{
+    background-color: rgb(27, 27, 202);
+    color: white;
+    padding: 10px;
+   
+}
+.active{background-color: red;
+    color:white;}
+.navbar
+{
+    display: flex;
+    align-items: center;
+justify-content: center;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+position: sticky;
+top: 0px;
+background-color: white;
+padding: 5px;
+}
+.navbar a{
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    margin: 5px 10px 5px 10px;
+    color: black;
+}
+.navbar a:hover{
+background-color: red;
+color: white;
+}
+
+.mainHome {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    
+  }
+.mainHome h1
+{
+    color: rgb(9, 9, 54);
+    border-bottom: 2px solid black;
+}
+.mainHome p
+{
+font-size:large;
+}
+
+.aboutImg img
+{
+margin-right:15px;
+border: 2px groove black;
+cursor: pointer;
+}
+.academicImg img
+{
+    width: 98%;
+    margin-right:10px;
+    margin-top: 10px;
+    border: 2px groove black;
+    cursor: pointer;
+}
+
+.aboutImg img:hover, .academicImg img:hover
+{
+box-shadow:3px 3px 3px rgb(71, 70, 70) ;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+}
+.vision, .mission
+{
+flex: 1;
+margin: 10px;
+text-align: justify;
+}
+.vision h1,.mission h1
+{
+    text-align: center;
+    color:blue;
+    text-shadow: 2px 2px 3px gray;
+}
+.footer 
+{
+    padding: 10px;
+    background-color: gray;
+    text-align: center;
+}
+.footer a 
+{
+    color: blue;
+}
+@media screen and (max-width:910px){
+    .mainHome{
+        grid-template-columns: auto;
+        line-break: anywhere;
+    }
+   .container{flex-direction: column;}
+}
